@@ -47,4 +47,4 @@ https://github.com/nordnet/cordova-universal-links-plugin/commit/b2c578476422531
 https://github.com/angular/angularfire/blob/master/docs/ionic/authentication.md
 https://firebase.google.com/docs/auth/web/cordova
 https://stackoverflow.com/questions/53783142/permission-denied-error-in-xcode-10-preventing-build-command-phasescriptexecut
-
+https://cordova.apache.org/docs/en/latest/guide/cli/
