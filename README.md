@@ -19,7 +19,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 6) run `cordova plugin remove cordova-plugin-customurlscheme  --variable URL_SCHEME=com.example.angularfirelogin`
 7) run `cordova plugin add cordova-plugin-customurlscheme  --variable URL_SCHEME=IOS_BUNDLE_ID_ANDROID_PACKAGE_ID_CREATED_IN_STEP_3`
 8) edit config.xml file,update `widget id` to IOS_BUNDLE_ID_ANDROID_PACKAGE_ID_CREATED_IN_STEP_3, 
-<widget id="com.clinictimeslots.wwwq" will become <widget id="IOS_BUNDLE_ID_ANDROID_PACKAGE_ID_CREATED_IN_STEP_3"
+<widget id="com.clinictimeslots.wwwq" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ClinicTimeslots</name>
+
+<widget id="IOS_BUNDLE_ID_ANDROID_PACKAGE_ID_CREATED_IN_STEP_3" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>IOS_ANDROID_CUSTOMIZED_PROJECT_NAME</name>
+IOS_ANDROID_CUSTOMIZED_PROJECT_NAME will be used to generate IOS project code under platforms/ios folder for a few folders' name
+
 9) update <universal-links>
       <host name="angularfirelogin.page.link" scheme="https" />
       <host name="angularfirelogin-94117.firebaseapp.com" scheme="https">
@@ -34,12 +40,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       </host>
     </universal-links>
     
-10) run cordova platform remove android
-11) run cordova platform remove ios
-12) run cordova platform add android
-13) run cordova platform add ios
-14) ng build
-15) replace www/index.html file <body>...</body> part with below:(this may break some buttons,but it will at least work. need investigation) 
+10) run cordova platform remove ios(to update folder names change because of name changed in step 8, android may not need to be removed and added)
+11) run cordova platform add ios
+12) ng build
+13) replace www/index.html file <body>...</body> part with below:(this may break some buttons,but it will at least work. need investigation) 
 <body>
   <app-root></app-root>
   <script src="runtime-es2015.js" type="text/javascript"></script>
