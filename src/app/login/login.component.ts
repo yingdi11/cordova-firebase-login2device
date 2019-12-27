@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {AngularFireAuth} from '@angular/fire/auth';
 import {auth} from 'firebase';
 import {Router} from '@angular/router';
@@ -10,7 +10,8 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public afAuth: AngularFireAuth , private router: Router) {
+  user: firebase.User = null;
+  constructor(public afAuth: AngularFireAuth , private router: Router, private cd: ChangeDetectorRef) {
   }
   login() {
     let provider = new auth.GoogleAuthProvider();
@@ -21,7 +22,8 @@ export class LoginComponent implements OnInit {
       // You can use it to access the Google API.
       var token = (result.credential as any).accessToken;
       // The signed-in user info.
-      var user = result.user;
+      this.user = result.user;
+      this.cd.detectChanges();
       console.log(result)
       // ...
     }).catch((error) => {
@@ -32,7 +34,10 @@ export class LoginComponent implements OnInit {
     });
   }
   logout() {
-    this.afAuth.auth.signOut();
+    this.afAuth.auth.signOut().then(() => {
+      this.user = null;
+      this.cd.detectChanges();
+    });
   }
 
   ngOnInit() {
