@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
     let provider = new auth.GoogleAuthProvider();
     auth().signInWithRedirect(provider).then(function() {
       return auth().getRedirectResult();
-    }).then(function(result) {
+    }).then((result) => {
       // This gives you a Google Access Token.
       // You can use it to access the Google API.
       var token = (result.credential as any).accessToken;
@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
       var user = result.user;
       console.log(result)
       // ...
-    }).catch(function(error) {
+    }).catch((error) => {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
