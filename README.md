@@ -39,11 +39,13 @@ IOS_ANDROID_CUSTOMIZED_PROJECT_NAME will be used to generate IOS project code un
         <path url="/__/auth/callback"/>
       </host>
     </universal-links>
-    
-10) run cordova platform remove ios(to update folder names change because of name changed in step 8, android may not need to be removed and added)
-11) run cordova platform add ios
-12) ng build
-13) replace www/index.html file <body>...</body> part with below:(this may break some buttons,but it will at least work. need investigation) 
+
+10) run cordova platform remove ios
+11) run cordova platform remove android
+12) run cordova platform add ios
+13) run cordova platform add android
+14) ng build
+15) replace www/index.html file <body>...</body> part with below:(this may break some buttons,but it will at least work. need investigation) 
 <body>
   <app-root></app-root>
   <script src="runtime-es2015.js" type="text/javascript"></script>
