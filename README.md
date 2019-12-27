@@ -15,6 +15,7 @@ https://www.linkedin.com/pulse/angular-2-build-your-mobile-app-using-cordova-era
 https://github.com/nordnet/cordova-universal-links-plugin/commit/b2c5784764225319648e26aa5d3f42ede6d1b289#diff-d5955d9f4d88b42e5efd7a3385be79e9
 https://github.com/angular/angularfire/blob/master/docs/ionic/authentication.md
 https://firebase.google.com/docs/auth/web/cordova
+https://stackoverflow.com/questions/53783142/permission-denied-error-in-xcode-10-preventing-build-command-phasescriptexecut
 
 ## Development server
 
