@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
+1) create a firebase project
+2) create android and ios
+3) update values in config.xml file
+4) create environment.ts & environment.prod.ts file with firebase parameter values
+5) setup dynamic links 
+6) for ios , one cordova plugin has to be created with a specific variable
+7) cordova run android / cordova run ios
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
