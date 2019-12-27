@@ -3,7 +3,21 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
 1) create a firebase project
-2) create android and ios
+2) enable google login
+3) create 4 apps (2 webs/android/ios) , appid for android and ios should be same and will be used in following steps
+4) copy firebase parameter from web (firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
+  };) to src/environment folder. environment.ts and environment.prod.ts for 2 webs,
+
+
+2) create android and ios projects
 3) update values in config.xml file
 4) create environment.ts & environment.prod.ts file with firebase parameter values
 5) setup dynamic links 
