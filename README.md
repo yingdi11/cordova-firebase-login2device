@@ -10,7 +10,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 6) for ios , one cordova plugin has to be created with a specific variable
 7) cordova run android / cordova run ios
 
-
+Reference:
+https://www.linkedin.com/pulse/angular-2-build-your-mobile-app-using-cordova-eran-hadad/
+https://github.com/nordnet/cordova-universal-links-plugin/commit/b2c5784764225319648e26aa5d3f42ede6d1b289#diff-d5955d9f4d88b42e5efd7a3385be79e9
+https://github.com/angular/angularfire/blob/master/docs/ionic/authentication.md
+https://firebase.google.com/docs/auth/web/cordova
 
 ## Development server
 
